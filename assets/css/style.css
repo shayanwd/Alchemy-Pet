@@ -1598,8 +1598,15 @@ section.puppy-image-sec img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/pawww.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
 }
+
 
 .alchemyPet-Promise-sec::before {
     content: "";
@@ -2197,4 +2204,9 @@ section.puppy-image-sec img {
     margin-top: 0px;
     padding-top: 60px;
     padding-bottom: 40px;
+}
+
+.liquid-rules-sec.bright {
+    background: #fff;
+    box-shadow: 0px 10px 11px -9px #0000000f;
 }
