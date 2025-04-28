@@ -1119,11 +1119,20 @@ body {
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-size: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.friends-dog-image:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.9);
 }
 
 .friends-dog-image {
     position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
+
 
 .friends-dog-image p {
     font-size: 17px;
@@ -1664,18 +1673,18 @@ section.puppy-image-sec img {
     gap: 20px;
     align-items: end;
     height: 250px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dog-pump-guide-card-one:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dog-pump-guide-card-one img {
     width: 100px;
     height: 200px;
     object-fit: contain;
-}
-
-.dog-pump-guide-card-inner-text h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 30px;
 }
 
 .dog-pump-guide-card-two {
@@ -1686,6 +1695,12 @@ section.puppy-image-sec img {
     gap: 20px;
     align-items: end;
     height: 274px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dog-pump-guide-card-two:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dog-pump-guide-card-two img {
@@ -1702,6 +1717,12 @@ section.puppy-image-sec img {
     gap: 20px;
     align-items: end;
     height: 274px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dog-pump-guide-card-three:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dog-pump-guide-card-three {
@@ -1712,6 +1733,7 @@ section.puppy-image-sec img {
     gap: 20px;
     align-items: end;
     height: 300px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dog-pump-guide-card-three img {
@@ -2014,6 +2036,20 @@ section.puppy-image-sec img {
     text-align: center;
     color: #111111;
     margin-bottom: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.add-btn-perdect-sec a:hover {
+    background-color: #111111;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-btn-perdect-sec a:active {
+    transform: translateY(0);
 }
 
 .buy-btn-perdect-sec a {
@@ -2030,6 +2066,19 @@ section.puppy-image-sec img {
     color: #ffffff;
     margin-bottom: 10px;
     background: #5433eb;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.buy-btn-perdect-sec a:hover {
+    background: #3a1fd1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(84, 51, 235, 0.3);
+}
+
+.buy-btn-perdect-sec a:active {
+    transform: translateY(0);
 }
 
 .buy-btn-perdect-sec span {
@@ -2191,6 +2240,21 @@ section.puppy-image-sec img {
     cursor: pointer;
     font-size: 0.9rem;
     color: #000;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.pd-btn a:hover {
+    color: #fff;
+    transform: scale(1.05);
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pd-btn a:active {
+    transform: scale(0.98);
 }
 
 .alchemy-micro-section.product-alchemy-micro-section {
